@@ -9,7 +9,7 @@ const customFormat = printf(({ level, message, label, timestamp }) => {
 
 const logger = createLogger({
   level: 'debug',
-  format: combine(label({ label: 'SUBSCRIPTION SERVICE' }), timestamp(), customFormat),
+  format: combine(label({ label: 'REQUESTLOGGER SERVICE' }), timestamp(), customFormat),
   transports: [new transports.Console()],
 });
 

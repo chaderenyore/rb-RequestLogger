@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/services/Subscription/
+    destination: /home/ubuntu/services/Requestlogger/
 hooks:
   BeforeInstall:
     - location: scripts/before-install.sh

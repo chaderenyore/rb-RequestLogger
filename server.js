@@ -11,11 +11,11 @@ mongoose
     useUnifiedTopology: true
   })
   .then(() => {
-    logger.info(`Subscription Service Database Connected......`)
+    logger.info(`RequestLogger Service Database Connected......`)
     const PORT = process.env.PORT || 2100;
     const server = app.listen(PORT, () => {
       
-      logger.info(`Subscription Service Server has started!... and running on port ${PORT}`);
+      logger.info(`Request Logger Service Server has started!... and running on port ${PORT}`);
       
     });
   }).catch(error => console.log(error));

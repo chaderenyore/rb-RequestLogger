@@ -1,8 +1,8 @@
 version: '3.7'
 
 services:
-  subscription:
-    container_name: subscription
+  requestlogger:
+    container_name: requestlogger
     build:
       context: .
 #      target: development
