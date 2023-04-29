@@ -12,7 +12,7 @@ mongoose
   })
   .then(() => {
     logger.info(`RequestLogger Service Database Connected......`)
-    const PORT = process.env.PORT || 2100;
+    const PORT = process.env.PORT || 2106;
     const server = app.listen(PORT, () => {
       
       logger.info(`Request Logger Service Server has started!... and running on port ${PORT}`);

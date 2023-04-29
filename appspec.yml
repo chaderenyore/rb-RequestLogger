@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/services/Requestlogger/
+    destination: /home/ubuntu/services/Logger/
 hooks:
   BeforeInstall:
     - location: scripts/before-install.sh
