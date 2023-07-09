@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 const app = require("./src");
 const KEYS = require("./src/_config/keys");
 const logger  = require('./logger.conf');
+const UserRequestLogsConsumer = require("./src/_queue/consumers/requestLogs.consumers");
+
 
 
 mongoose.set('strictQuery', true);
@@ -19,3 +21,5 @@ mongoose
       
     });
   }).catch(error => console.log(error));
+
+  UserRequestLogsConsumer.consume("Request Logs Consumer Running...")

@@ -1,5 +1,5 @@
 const Repository = require("../../../Repository");
-const RequestModel  = require("../models/requestLogger.model");
+const RequestModel  = require("../models/requestLogs.model");
 
 class RequestLoggerRepository extends Repository {
     constructor() {
