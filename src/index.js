@@ -43,7 +43,7 @@ const apiRouter = express.Router();
 
 // expose routes here
 apiRouter.use(routes());
-const apiURL = `/requestlogger/${KEYS.appVersion}`;
+const apiURL = `/logger/${KEYS.appVersion}`;
 app.use(apiURL, apiRouter);
 app.use(apiURL, (req, res, next)=> {
   res.json({data: null})
